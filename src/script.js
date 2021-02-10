@@ -161,4 +161,36 @@ while(num> 0){
 console.log(product - sum);
 
 
+
+
+// 16.	Write a program to enter a number and print its reverse.
+const input = 1234;
+function ReturnReverse(input){
+  for(let i = 0;i<input;i++){
+    
+  }
+  return input;
+}
+ReturnReverse(input)
+
+//12345   //54321 
+
+
+let num = 12345 //prompt('Enter the number');
+let reverse = 0; 
+let LoopCount = 0; 
+let daTa = 0;
+while (num!==0) {
+  LoopCount++
+  reverse = (reverse * 10) + (num % 10);
+  console.log(reverse);
+  daTa = Math.round(num/ LoopCount**10);
+  console.log(num);
+  
+ } 
+ 
+//console.log(reverse);
+
 */
+
+// 17.	Write a C program to check whether a number is palindrome or not.
