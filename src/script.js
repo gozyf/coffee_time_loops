@@ -305,6 +305,90 @@ while (n <= 255) {
 // console.log(s);
 
 // console.log(s);
-*/
+
 
 //21.	Write a  program to find power of a number using for loop.
+
+let number = 5;
+let ExpNumber = 1;
+let power = 3;
+
+let i = 0;
+while (i < power ) {
+
+  ExpNumber *= number;
+// ExpNumber = ExpNumber * number;
+             
+i++;
+}
+
+console.log(ExpNumber);
+
+console.log(number ** power);
+
+
+// 22.	Write a program to find all factors of a number.
+
+
+let num = 175;
+let i = 1;
+while (i <= num){
+  if (num % i === 0) {
+  console.log(i);
+    }
+  i++;
+}
+
+//23.	Write a C program to calculate factorial of a number.
+!5
+let num = 5; 
+let i = 1;
+let result = 1; 
+while (i <= num) {
+  result *= i;
+  i++;
+}
+console.log(factorial);
+
+
+function factorial (num) { 
+let i = 1;
+let result = 1; 
+while (i <= num) {
+    result *= i;
+    i++;
+  }
+  return result;
+}
+
+console.log(factorial(9));
+
+// Object with  method factorial 
+const obj = {
+   factorial: function (num) { 
+    let i = 1;
+    let result = 1; 
+    while (i <= num) {
+        result *= i;
+        i++;
+      }
+      return result;
+    }
+
+}
+
+console.log(obj.factorial(6))
+*/
+
+// 24.Write a C program to find HCF (GCD) of two numbers.
+const obj = {
+  factorial: (num) => {
+    let i = 1;
+    let result = 1;
+    while (i <= num) {
+      result *= i;
+      i++;
+    }
+    return result;
+  }
+};
