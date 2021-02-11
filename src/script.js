@@ -191,6 +191,102 @@ while (num!==0) {
  
 //console.log(reverse);
 
-*/
 
 // 17.	Write a C program to check whether a number is palindrome or not.
+//spread operator ...
+
+const isPalindrome = (text) => [...text].reverse().join("") === text;
+//console.log(isPalindrome("123JBLHVK"));
+
+// let n = 1234,
+//   reversedN = 0,
+//   remainder;
+
+// reversed integer is stored in reversedN
+// while (n !== 0) {
+//   remainder = n % 10;
+//   reversedN = reversedN * 10 + remainder;
+
+//   n = (n / 10) ^ 0;
+// }
+
+// console.log(reversedN); // 10 .0
+// 0
+console.log([..."1123456"].reverse().join(""));
+
+
+// 18.Write a program to find frequency of each digit in a given integer.
+
+let num = prompt('Enter the digit:');
+let n = num;
+let frequency = [];
+let base = 10;
+
+for (let i = 0; i < base; i++) {
+  frequency[i] = 0;
+}
+
+while (num != 0) {
+  let lastDigit = num % 10;
+  num = parseInt(num / 10);
+  frequency[lastDigit]++;
+}
+console.log("Frequency of each digit in", num);
+for (let i = 0; i < base; i++) {
+  console.log("Frequency of", i, "=", frequency[i]);
+}
+
+// 19.	Write a program to enter a number and print it in words.
+
+
+let num =prompt('Enter the number:');;
+let reverse = 0;
+console.log('Number:', num);
+
+while(num != 0){
+  reverse = (reverse * 10) + (num % 10);
+  num = parseInt(num/10);
+}
+
+while(reverse != 0){
+  switch(reverse % 10){
+    case 0: 
+    console.log("Zero ");
+    break;
+    case 1: 
+    console.log("One ");
+    break;
+    case 2: 
+    console.log("Two ");
+    break;
+    case 3: 
+    console.log("Three ");
+    break;
+    case 4: 
+    console.log("Four ");
+    break;
+    case 5: 
+    console.log("Five ");
+    break;
+    case 6: 
+    console.log("Six ");
+    break;
+    case 7: 
+    console.log("Seven ");
+     break;
+     case 8: 
+     console.log("Eight ");
+     break;
+     case 9: 
+     console.log("Nine ");
+      break;
+     }
+     reverse = parseInt(reverse / 10);
+  
+      }
+  
+
+
+*/
+
+// 20.	Write a  program to print all ASCII character with their values.
