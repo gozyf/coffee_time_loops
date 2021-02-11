@@ -287,6 +287,24 @@ while(reverse != 0){
   
 
 
-*/
+
 
 // 20.	Write a  program to print all ASCII character with their values.
+
+let n = 0 ;
+let char = ''
+while (n <= 255) {
+    console.log(`ASCII value of character ${n}`,'=',char =String.fromCharCode(n));
+    n++;
+    //=n.charCodeAt();
+}
+
+
+// let s = '';
+// for (var i = 0; i <= 255; i++) s += String.fromCharCode(i);
+// console.log(s);
+
+// console.log(s);
+*/
+
+//21.	Write a  program to find power of a number using for loop.
