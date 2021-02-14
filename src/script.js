@@ -378,9 +378,7 @@ const obj = {
 }
 
 console.log(obj.factorial(6))
-*/
 
-// 24.Write a C program to find HCF (GCD) of two numbers.
 const obj = {
   factorial: (num) => {
     let i = 1;
@@ -392,3 +390,70 @@ const obj = {
     return result;
   }
 };
+console.log(obj.factorial(8));
+
+
+// 24.Write a program to find HCF (GCD) of two numbers.
+function getGCD(a,b){
+  if (b === 0){
+    return a;
+  }
+  return getGCD(b,a%b);
+}
+console.log(getGCD(100,200));
+
+
+
+// input 3 , 8
+// Multiples of 3 are 3, 6, 9, 12, 15, 18, 21, 24...
+// 3*1  3*2  3*3 3*4  24 
+// 8*1  8*2  8*3 *4
+// Multiples of 8 are 8, 16, 24, 32, 40..
+
+//25. Write a C program to find LCM of two numbers.
+const a = 3;
+const b = 8;
+let num1, num2, result;
+ for(let i = 0; i <=100; i++){
+  if( a*i === b*i) ;
+ }
+ function getLCM(a,b){
+  if (a*i === 0){
+    return a;
+  }
+  return getLCM(b,);
+}
+console.log(getLCM(100,200));
+
+
+
+//num1 === num2
+
+*/
+
+// 26.Write a C program to check whether a number is Prime number or not.
+
+// input 17 
+// output 
+
+let a = 15;
+let chet = [];
+let n = 1; 
+let counter = 0;
+
+
+while (a > 0) {
+  if (a%n === 0){
+    chet.push(n);
+    counter++
+  };
+  
+  a--;
+  n++;
+}
+
+if (counter > 2 ){
+  console.log(`input is not prime number ${chet}`);
+}
+else 
+  console.log(`input is prime number ${chet}`);
